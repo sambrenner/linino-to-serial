@@ -8,7 +8,7 @@ Usage:
 linino-to-serial PORT BAUDRATE MSG
 
 Example:
-linino-to-serial /dev/ttyATH0 115200 "msg"
+linino-to-serial /dev/ttyATH0 230400 "msg"
 """
 
 import serial
