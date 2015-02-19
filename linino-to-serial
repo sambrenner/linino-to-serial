@@ -1,0 +1,21 @@
+#!/usr/bin/python
+
+"""
+Install:
+Copy to /usr/bin (or any directory in your PATH)
+
+Usage:
+linino-to-serial PORT BAUDRATE MSG
+
+Example:
+linino-to-serial /dev/ttyATH0 115200 "msg"
+"""
+
+import serial
+import sys
+
+s=serial.Serial(sys.argv[1],sys.argv[2],timeout=5)
+s.write(sys.argv[3])
+
+print "Done!"
+s.close()
